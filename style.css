@@ -28,6 +28,12 @@ nav, footer {
     justify-content: space-around;
 }
 
+footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 100%;
+}
+
 aside {
     padding: 10px;
     height: auto;
@@ -53,7 +59,7 @@ p {
 
 code {
     font-family: 'Source Code Pro', monospace;
-    color: #5774ff;
+    /* color: #5774ff; */
 }
 
 .code-block {
