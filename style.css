@@ -1,87 +1,83 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 16px;
     color: #0079c2;
     font-size: 16px;
-    background-image: url("material_dots.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    background: #0079c2 url(material_dots.jpg) center no-repeat fixed;
     background-size: cover;
-    background-color: #efefef;
-    padding: 0;
-    margin: 0;
-}
-
-body > * {
-    background-color: #fff;
 }
 
 header {
-    padding: 5px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
-nav, footer {
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
+.logo img {
+    padding: 10px 0;
+    max-height: 64px;
 }
 
-footer {
-    position: fixed;
-    left: 0; bottom: 0;
-    width: 100%;
+.roadmap {
+    font-family: 'Source Code Pro', monospace;
+    margin: auto 0;
+    color: #0079c2;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 aside {
+    position: absolute;
     padding: 10px;
-    height: auto;
     width: 180px;
-    position: absolute !important;
-    z-index: 1;
-    overflow: auto;
-    font-weight: 500;
+    background-color: white;
     border-radius: 0 0 8px 0;
 }
 
+aside h3 {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ol li {
+    padding-bottom: 5px;
+}
+
 article {
+    color: #0079c2;
+    background-color: #fff;
     margin: 10px 10px 10px 210px;
-    width: auto;
     padding: 15px;
-    transition: margin-left 0s;
     border-radius: 8px;
 }
 
-p {
+.first {
+    margin-block-start: 0;
+}
+
+section p {
+    margin-bottom: 0;
     text-indent: 20px;
 }
 
-code {
-    font-family: 'Source Code Pro', monospace;
-    /* color: #5774ff; */
-}
-
-.code-block {
-    display: block;
-    margin: 10px;
-    padding: 10px;
-    border-left: 5px solid #9d64ff;
-    white-space: pre-wrap;
+.highlight {
+    margin: 0;
+    font-weight: bold;
+    color: #28536e
 }
 
 @media (max-width: 768px) {
-    nav {
-        font-size: 1rem;
-    }
-
     aside {
-        height: unset;
-        width: unset;
-        position: unset !important;
+        height: auto;
+        width: auto;
+        position: relative;
         border-radius: 0;
     }
-
     article {
         margin: 10px;
         width: auto;
