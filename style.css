@@ -4,8 +4,7 @@ body {
     color: #0079c2;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    background: #0079c2 url(material_dots.jpg) center no-repeat fixed;
-    background-size: cover;
+    background: #0079c2 url(background-fabric-light.png);
 }
 
 header {
