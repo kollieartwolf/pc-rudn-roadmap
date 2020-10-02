@@ -44,6 +44,16 @@ aside h3 {
     font-weight: bold;
 }
 
+aside a {
+    color: #0079c2;
+    text-decoration: none;
+    transition: .1s linear;
+}
+
+aside a:hover {
+    color: #28536e;
+}
+
 ol li {
     padding-bottom: 5px;
 }
